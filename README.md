@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## demo
+![demo](demo/1.JPG?raw=true "demo")
+![demo](demo/2.JPG?raw=true "demo1")
