@@ -17,13 +17,13 @@ export default {
 footer {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
 }
 div {
-  color: rgb(245, 185, 116);
+  color: #C2185B;
   margin-top: 0.5rem;
   padding: 0.5rem;
 }

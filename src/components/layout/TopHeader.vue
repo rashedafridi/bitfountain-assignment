@@ -10,7 +10,7 @@
           <router-link to="/">All </router-link>
         </li> -->
         <li v-if="isLoggedIn">
-          <button @click="logout">Logout</button>
+          <base-button @clicked="logout">Logout</base-button>
         </li>
         <li v-else>
           <router-link to="/auth">Login</router-link>
@@ -44,7 +44,7 @@ export default Vue.extend({
 header {
   width: 100%;
   height: 4rem;
-  background-color: #793a00;
+  background-color: #C2185B;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,9 +1,9 @@
 <template>
   <div class="card" @click="$emit('openMedicalDataModul',BrandId ,Name)">
     <h1>{{Name}}</h1>
-    <h2>{{BrandId}}</h2>
-    <div><span>{{TypeId}}</span> <span> </span> {{Comment}} </div>
-    <p>{{Description}}</p>
+    <h2> <b>BrandId: </b> {{BrandId || "No data"}}</h2>
+    <div><span><b>TypeId: </b>{{TypeId|| "No data"}}</span> <span> </span><b>Comment: </b> {{Comment|| "No data"}} </div>
+    <p><b>Description: </b>{{Description|| "No data"}}</p>
   </div>
 </template>
 <script lang="ts">
@@ -31,7 +31,8 @@ export default Vue.extend({
   margin: 0.5rem 0.5rem;
   /* margin-top: 2rem; */
   max-width: 80rem;
-  background-color: #fff5f1;
+  background-color: #fff0f5;
+  overflow: hidden;
 }
 .card:hover {
   margin-top: -0.3rem;
