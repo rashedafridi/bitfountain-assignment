@@ -11,7 +11,7 @@
         <section>
           <search-box></search-box>
           <div class="devise-list-container">
-            <div v-if="!isModelData">No data</div>
+            <div class="no-data" v-if="!isModelData">No data</div>
             <model-data-container
               v-for="modelData in modelDataObj"
               :key="modelData.id"
@@ -67,7 +67,6 @@ export default Vue.extend({
       return !!this.modelDataObj.length;
     },
   },
-  // emits: ["close"],
   methods: {
     tryClose() {
       this.$emit("close");
@@ -80,6 +79,11 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.no-data{
+  font-size: larger;
+  text-align: center;
+  margin-top: 2rem;
+}
 .backdrop {
   position: fixed;
   top: 0;
